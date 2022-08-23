@@ -59,6 +59,9 @@ display(playerArray);
 
 // =============================
 // step-1
+
+
+
 document.getElementById('btn-calculate').addEventListener('click',function(){
 // step-2
   const perPlayerCoast = document.getElementById('per-player-cost');
@@ -111,10 +114,13 @@ document.getElementById('btn-total-calculation').addEventListener('click', funct
  const allExpensesFieldString = allExpensesField.innerText;
  const allExpensesFieldAmount = parseFloat(allExpensesFieldString);
 
+ const calculateField = document.getElementById('all-player-cost');
+ const calculateFieldString = calculateField.innerText;
+ const newcalculateFieldAmount = parseFloat(calculateFieldString);
 
 
  const totalExpense = allExpensesFieldAmount+newAdd ;
- allExpensesField.innerText = totalExpense  ;
+ allExpensesField.innerText = totalExpense + newcalculateFieldAmount  ;
 
 
 
