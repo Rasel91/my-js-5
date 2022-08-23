@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Select Your Best Five Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+   <header class="bg-success">
+    <div class="d-flex justify-content-between ">
+        <div>
+            <img src="images/Group 12.png" alt="">
+        </div>
+
+        <div class="d-flex text-warning align-items-center">
+          <h1 class=" fs-1  "> Select Your Best Five Player</h1>
+        </div>
+        
+        <div>
+            <img src="images/Card-psg.png" alt="">
+        </div>
+    </div>
+  </header>
+ <!-- players sections -->
+   <section class="container mt-5">
+    <div class="container text-center">
+     <div class="row">
+        <div class="col-md-9">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/1.png"class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lionel Messi </h5>
+                          <div class="d-flex justify-content-between">
+                            <div><p class="card-text"> <span> 36Gols</span></p></div>
+                            <div><p class="card-text"> <span> 120 Assist</span></p></div>
+                          </div>
+                    
+                          <button class="btn btn-primary mt-2 px-4" onclick="addTocart(this);this.disabled = true;">Select</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/6.png"class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Neymar Jr</h5>
+                          <div class="d-flex justify-content-between">
+                            <div><p class="card-text"> <span> 36Gols</span></p></div>
+                            <div><p class="card-text"> <span> 120 Assist</span></p></div>
+                          </div>
+                    
+                          <button class="btn btn-primary mt-2 px-4" onclick="addTocart(this);this.disabled = true; ">Select</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/4.png"class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Kylian Mbappé</h5>
+                          <div class="d-flex justify-content-between">
+                            <div><p class="card-text"> <span> 36Gols</span></p></div>
+                            <div><p class="card-text"> <span> 120 Assist</span></p></div>
+                          </div>
+                    
+                          <button class="btn btn-primary mt-2 px-4" onclick="addTocart(this);this.disabled = true; ">Select</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="images/3.png"class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Vítor Machado</h5>
+                          <div class="d-flex justify-content-between">
+                            <div><p class="card-text"> <span> 36Gols</span></p></div>
+                            <div><p class="card-text"> <span> 120 Assist</span></p></div>
+                          </div>
+                    
+                          <button class="btn btn-primary mt-2 px-4" onclick="addTocart(this);this.disabled = true;">Select</button>
+                        </div>
+                      </div>
+                </div>
+                <!-- player 4 -->
+                <div class="col">
+                    <div class="card">
+                        <img src="images/7.png"class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Sergio Ramos</h5>
+                          <div class="d-flex justify-content-between">
+                            <div><p class="card-text"> <span> 36Gols</span></p></div>
+                            <div><p class="card-text"> <span> 120 Assist</span></p></div>
+                          </div>
+                    
+                          <button class="btn btn-primary mt-2 px-4" onclick="addTocart(this);this.disabled = true;">Select</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/5.png"class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Renato Sanches</h5>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <p class="card-text"> <span> 36Gols</span></p>
+                        </div>
+                        <div>
+                          <p class="card-text"> <span> 120 Assist</span></p>
+                        </div>
+                        
+                      </div>
+                
+                      <button class="btn btn-primary mt-2 px-4" onclick="addTocart(this);this.disabled = true;">Select</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+<!------------- side bar calculation---------------- -->
+        <div class="col-md-3 bg-success ">
+          <div>
+            <h1 class="text-light"> Select <span id="Select-Total" >0</span></h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">SL No</th>
+                  <th scope="col">Name</th>
+                </tr>
+              </thead>
+              <tbody id="player-select">
+                <!-- <tr>
+                  
+                </tr> -->
+            
+              </tbody>
+            </table>
+          </div>
+           
+          
+            <h1> Budget</h1>
+            <div class="d-flex mt-2">
+               
+                <label for="player">Per Player</label>
+                <input  class="w-50 " type="text" name="text" placeholder="number" id="per-player-cost">
+            </div>
+          
+                <button id="btn-calculate" class="btn btn-primary mt-2 px-4">Calculate</button>
+
+
+            <div>
+                <p class=" fs-5 text-light">Player Expense:$<span id="all-player-cost">00</span></p>
+            </div>
+
+            <div class="d-flex mt-2">
+                <label for="Manager">Manager:</label>
+                <input id="manager-salary"  class="w-50 " type="text" name="text" placeholder="amount" >
+            </div>
+
+            <div class="d-flex mt-2">
+                <label class="m-2" for="Coach">Coach:</label>
+                <input id="coach-salary" class="w-50 " type="text" name="text" placeholder="amount" >
+            </div>
+
+            <div>
+                <button id="btn-total-calculation" class="btn btn-primary mt-2 px-5 ">Total Calculate</button>
+            </div>
+
+            <div>
+                <p class=" fs-5 text-light">Total Expense : $<span id="all-expense" >00</span></p>
+            </div>
+        </div>
+
+
+     </div>
+    </div>
+
+   </section>
+    
+   <section>
+      <footer class="bg-dark text-center m-4">
+         <p class="text-light ">&copy All Right Sheikh Rasel</p>
+      </footer>
+   </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="js/apps.js"></script>
+  </body>
+</html>
